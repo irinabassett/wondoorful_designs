@@ -1,4 +1,4 @@
-# wondoorful_designs
+# Wondoorful Designs
 
 # Description
 A brief description of your project
@@ -9,7 +9,9 @@ The class(es) I created are:
 1. class name ex( .main-info-section )
 .. what class does, ex( adds padding & changes background color of .main-info-section )
 
-2.
+2. class name
+
+3. class name
 
 # Custom JavaScript Functions
 The javascript functions I created are:
