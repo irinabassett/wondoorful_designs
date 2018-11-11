@@ -32,7 +32,7 @@ a {
 .nav {
   display: flex;
   justify-content: space-around;
-  font-weight: 700;
+  font-weight: 800;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
@@ -53,6 +53,10 @@ a {
   color: white;
 }
 
+/* Hide hamburger menu */
+.main-nav .icon {
+  display: none;
+}
 
 header {
   text-align: center;
@@ -93,7 +97,7 @@ header .logo {
 
 h2 {
   text-align: center;
-  color: #6633ff;
+  color: #1f3259;
 }
 
 p {
@@ -101,9 +105,9 @@ p {
 }
 
 .card {
-  margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
+  margin: 20px;
+  padding: 20px 20px 20px;
+  max-width: 650px;
   text-align: justify;
   background: rgb(236, 234, 234);
   border-bottom: 4px solid #4f2903;
@@ -168,6 +172,34 @@ a.social:hover {
 }
 .clearfix {
   clear: both;
+}
+
+/* When the screen is less than 600 pixels wide*/  
+@media screen and (max-width: 600px) {
+  .main-nav li:not(:first-child) {display: none;} /*hide all links, except for the first one */
+  .main-nav a.icon { /*Show hamburger menu */
+    float: right;
+    display: block;
+    padding: 5px;
+  }
+  .name {
+    font-size: 200%;
+  }
+}
+
+ /* The responsive class is added to the main-nav with JavaScript when user clicks on the icon */
+@media screen and (max-width: 600px) {
+  .main-nav.responsive {position: relative;}
+  .main-nav.responsive a.icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .main-nav.responsive li { /*(display the links vertically instead of horizontally)*/
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
  /*Styles for larger screens */
