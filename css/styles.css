@@ -7,9 +7,10 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: large;
   color: black;
-  background: #f3d381;
+  background: #c3d3e3;
 }
 /* Link Styles */
 
@@ -17,15 +18,12 @@ a {
   text-decoration: none;
   color: #0499ff;
 }
-a:hover {
-  color: #6633ff;
-}
 
 /* Section Styles */
 
 .main-nav {
   width: 100%;
-  background: rgb(105, 3, 3);
+  background:#830504;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -39,58 +37,166 @@ a:hover {
   margin: 0 auto;
   padding: 0;
 }
-.nav .name {
-  display: none;
-}
+
 .nav li {
+  display: inline-block;
   padding: 5px 10px 10px 10px;
 }
 .nav a {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: rgba(180, 180, 63, 0.932);
+}
+/* Add an active class to highlight the current page */
+.active {
+  color: white;
+}
+
+
+header {
+  text-align: center;
+  background: url(../img/paint2.jpg) no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 header {
-  display: flex;
-  text-align: center;
-  overflow: hidden;
-  padding-top: 60px;
+  line-height: 1;
 }
-header {
-  line-height: 1.5;
-}
+
 header .logo {
   margin-top: 50px;
-  width: 150px;
-  height: 150px;
+  width: 185px;
+  height: 185px;
   border-radius: 50%;
   border: 3px solid white;
   transition: all .5s;
 }
+
 .tag {
-  background-color: #efefef;
+  text-align: center;
+  background-color: #d5dce6;
   color: black;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
+
+.name {
+  font-size: 250%;
+  color: #830504;
+}
+
+h2 {
+  text-align: center;
+  color: #6633ff;
+}
+
+p {
+  color: black;
+}
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
-  text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
+  text-align: justify;
+  background: rgb(236, 234, 234);
+  border-bottom: 4px solid #4f2903;
   border-radius: 6px;
 }
+
 main .profile-image {
-  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid rgb(82, 21, 21);
   transition: all .5s;
 }
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  margin-right: 20px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .5;
+  transition: all .25s;
+}
+a.facebook {
+  background-image: url(../img/facebook.png);
+}
+a.instagram {
+  background-image: url(../img/instagram.png);
+}
+a.email {
+  background-image: url(../img/email.png);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+ /*Styles for larger screens */
+
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: flex;
+      max-width: 1200px;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 450px;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+}
+
