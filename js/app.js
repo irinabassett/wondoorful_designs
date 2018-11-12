@@ -1,8 +1,13 @@
-function myFunction() {
-  var x = document.getElementById("mainNav");
-  if (x.className === "main-nav") {
-      x.className += " responsive";
-  } else {
-      x.className = "main-nav";
-  }
+/* Open side navigation */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Close side navigation */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "#c3d3e3";
 }
