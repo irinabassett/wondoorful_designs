@@ -19,7 +19,7 @@ body {
 
 /* Section Styles */
 
-header {
+header { 
   text-align: center;
   background: url(../img/paint2.jpg) no-repeat top center;
   box-shadow: 0 8px 6px -6px black;
@@ -61,7 +61,8 @@ header .logo {
 }
 
 .menu {
-  color: #521ce6
+  color: #521ce6;
+  cursor: pointer;
 }
 
 /* The side navigation menu */
