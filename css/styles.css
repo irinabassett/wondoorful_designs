@@ -2,6 +2,8 @@
 
 * {
 	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
 }
 
 body {
@@ -20,10 +22,11 @@ body {
 header {
   text-align: center;
   background: url(../img/paint2.jpg) no-repeat top center;
+  box-shadow: 0 8px 6px -6px black;
   background-size: cover;
   overflow: hidden;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   line-height: 1;
 }
 
@@ -33,22 +36,32 @@ header .logo {
   height: 190px;
   border-radius: 50%;
   border: 4px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .tag {
   text-align: center;
   background-color: #d5dce6;
-  color: rgb(21, 92, 21);
   font-weight: 900;
   padding: 10px;
   border-radius: 10px;
   display: table;
   margin: 20px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .name {
   font-size: 250%;
   color: #830504;
+}
+
+.artist{
+  font-size: 150%;
+  color: rgb(21, 92, 21);
+}
+
+.menu {
+  color: #521ce6
 }
 
 /* The side navigation menu */
@@ -69,7 +82,7 @@ header .logo {
 .sidenav a {
   padding: 30px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: #63c7f5;
   display: block;
   transition: 0.3s;
@@ -111,19 +124,38 @@ p {
   border-top: 4px solid #4f2903;
   border-bottom: 4px solid #4f2903;
   border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-main .profile-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
+.aboutCard {
+  margin: 20px;
+  padding: 20px 20px 20px;
+  text-align: justify;
+  background: rgb(236, 234, 234);
+  border-top: 4px solid #4f2903;
+  border-bottom: 4px solid #4f2903;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutH {
+  text-align: center;
+  color: rgb(19, 201, 19);
+
+}
+.profile-image {
+  position: relative;          /* where the next element will be automatically positioned */
+  display: inline-block;       /* causes element width to shrink to fit content */
+  left: 50%;                   /* moves left side of image to center of parent element */
+  transform: translate(-50%);  /* centers image on "left: 50%" position */
+  margin-top: 10px;
   width: 180px;
   height: 180px;
   border-radius: 50%;
   border: 3px solid rgb(82, 21, 21);
   transition: all .5s;
 }
+
 
 footer {
   width: 100%;
@@ -171,20 +203,18 @@ a.social:hover {
 }
 .clearfix {
   clear: both;
+  overflow: auto;
 }
 
 /* When the screen is less than 600 pixels wide*/  
 
 @media screen and (max-width: 600px) {
   
-  .sidenav {
-    padding-top: 15px;
-  }
   .sidenav a {
     font-size: 18px;
   }
   .name {
-    font-size: 200%;
+    font-size: 195%;
     transition: all .5s;
   }
 }
@@ -195,9 +225,22 @@ a.social:hover {
   
   .flex {
       display: flex;
-      max-width: 1200px;
+      max-width: 1250px;
       justify-content: space-around;
       margin: 0 auto;
+  }
+
+  .flex-container {
+    display: flex;
+    max-width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .aboutPar {
+    margin-left: 30px;
+    line-height: 1.8rem;
   }
 
   header {
@@ -205,7 +248,7 @@ a.social:hover {
   }
 
   main {
-    padding-top: 50px;
+    padding: 50px 0 ;
   }
 
   main p {
