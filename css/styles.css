@@ -231,7 +231,7 @@ a.social:hover {
   
   .flex {
       display: flex;
-      max-width: 1250px;
+      max-width: 82.5%;
       justify-content: space-around;
       margin: 0 auto;
   }
