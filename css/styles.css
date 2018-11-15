@@ -19,6 +19,8 @@ body {
 
 /* Section Styles */
 
+/*Header Styles*/
+
 header { 
   text-align: center;
   background: url(../img/paint2.jpg) no-repeat top center;
@@ -30,7 +32,7 @@ header {
   line-height: 1;
 }
 
-header .logo { 
+header .logo {                          /*Header round logo image*/
   margin-top: 20px;
   width: 190px;
   height: 190px;
@@ -39,7 +41,7 @@ header .logo {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.tag { 
+.tag {                                  /*Header labels*/
   text-align: center;
   background-color: #d5dce6;
   font-weight: 900;
@@ -50,23 +52,24 @@ header .logo {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.name {
+.name {                                /* Header label 1 */
   font-size: 250%;
   color: #830504;
 }
 
-.artist{
+.artist{                               /* Header label 2 */
   font-size: 150%;
   color: rgb(21, 92, 21);
 }
 
-.menu {
+.menu {                                /* Header label 3 */
   color: #521ce6;
   cursor: pointer;
 }
 
-/* The side navigation menu */
-.sidenav {
+/*Side Navigation Styles*/
+
+.sidenav {                             /* Side navigation menu */
   height: 100%;
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; 
@@ -79,8 +82,7 @@ header .logo {
   transition: 0.5s; 
 }
 
-/* The navigation menu links */
-.sidenav a {
+.sidenav a {                          /* Navigation menu links */
   padding: 30px;
   text-decoration: none;
   font-size: 20px;
@@ -93,8 +95,7 @@ header .logo {
   color: #e1b826;
 }
 
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+.sidenav .closebtn {               /* Position and style the close button (top right corner) */
   position: absolute;
   top: 0;
   right: 25px;
@@ -102,10 +103,13 @@ header .logo {
   margin-left: 50px;
 }
 
-/* Style page content to push to the right when you open the side navigation */
-#main {
+
+
+#main {             /* Style page content to push to the right when you open the side navigation */
   transition: margin-left .5s;
 }
+
+/*Container Styles*/
 
 h2 {
   text-align: center;
@@ -116,7 +120,7 @@ p {
   color: black;
 }
 
-.card {
+.card {                                    /* Styles for all 3 containers in the middle*/
   margin: 20px;
   padding: 20px 20px 20px;
   max-width: 650px;
@@ -128,7 +132,7 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.aboutCard {
+.aboutCard {                                /*About Me Container*/
   margin: 20px;
   padding: 20px 20px 20px;
   text-align: justify;
@@ -139,15 +143,15 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.aboutH {
+.aboutH {                                   /* About Me header*/
   text-align: center;
   color: rgb(19, 201, 19);
-
 }
-.profile-image {
-  position: relative;          /* where the next element will be automatically positioned */
-  display: inline-block;       /* causes element width to shrink to fit content */
-  left: 50%;                   /* moves left side of image to center of parent element */
+
+.profile-image {                           /* Image inside About Me container*/
+  position: relative;      /* where the next element will be automatically positioned */
+  display: inline-block;   /* causes element width to shrink to fit content */
+  left: 50%;               /* moves left side of image to center of parent element */
   transform: translate(-50%);  /* centers image on "left: 50%" position */
   margin-top: 10px;
   width: 180px;
@@ -157,6 +161,7 @@ p {
   transition: all .5s;
 }
 
+/* Footer Styles*/
 
 footer {
   width: 100%;
@@ -180,7 +185,7 @@ footer ul li {
   display: inline-block;
 }
 
-a.social {
+a.social {                 /* Styles for footer social media links  */
   display: inline-block;
   text-indent: -9999px;
   margin-left: 5px;
@@ -207,9 +212,9 @@ a.social:hover {
   overflow: auto;
 }
 
-/* When the screen is less than 600 pixels wide*/  
+/* Styles for screens less than 600 pixels wide*/  
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {  
   
   .sidenav a {
     font-size: 18px;
@@ -220,7 +225,7 @@ a.social:hover {
   }
 }
 
- /*Styles for larger screens */
+ /*Styles for screens larger than 720px*/
 
 @media screen and (min-width: 720px) {
   
