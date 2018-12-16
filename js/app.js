@@ -1,8 +1,8 @@
 
 /* Slide in side navigation, push the page content to the right, add a black background color with a 40% opacity to the body element. */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "170px";
-  document.getElementById("main").style.marginLeft = "170px";
+  document.getElementById("mySidenav").style.width = "28%";
+  document.getElementById("main").style.marginLeft = "28%";
   document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
 }
 
