@@ -1,0 +1,181 @@
+
+.card {                                /*Paint Party Container*/
+    padding: 20px 20px 20px;
+    text-align: justify;
+    background: rgb(236, 234, 234);
+    border-top: 4px solid #4f2903;
+    border-bottom: 4px solid #4f2903;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.paintH {                                   /* Paint Party header*/
+    text-align: center;
+    color: rgb(158, 47, 7);
+}
+
+.paint-image {                           /* Image inside About Me container*/
+    position: relative;      /* where the next element will be automatically positioned */
+    display: inline-block;   /* causes element width to shrink to fit content */
+    left: 50%;               /* moves left side of image to center of parent element */
+    transform: translate(-50%);  /* centers image on "left: 50%" position */
+    margin-top: 10px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid rgb(3, 78, 34);
+    transition: all .5s;
+}
+
+.container {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#contact {
+    padding: 25px;
+    margin: 50px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    background: rgb(236, 234, 234);
+    border-top: 4px solid #4f2903;
+    border-bottom: 4px solid #4f2903;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contact h1 {
+    display: block;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: red;
+}
+
+#contact h3 {
+    margin: 5px 0 15px;
+    display: block;
+    font-weight: 400;
+    color: blue;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: #43A047;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}
+
+/*Styles for screens smaller than 720px*/
+
+@media screen and (max-width: 720px) {  
+
+    .card {
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 140%;
+    }
+    .paint-image {
+        width: 140px;
+        height: 140px;
+    }
+}
+/*Styles for screens larger than 720px*/
+
+@media screen and (min-width: 720px) {
+    
+    .flex-container {
+        display: flex;
+        max-width: 80%;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 50px auto;
+    }
+
+    .card {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .paintPar {
+        margin-left: 30px;
+        line-height: 1.6em;
+    }
+
+}
