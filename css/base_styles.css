@@ -103,65 +103,8 @@ header .logo {                          /*Header round logo image*/
   margin-left: 50px;
 }
 
-
-
 #main {             /* Style page content to push to the right when you open the side navigation */
   transition: margin-left .5s;
-}
-
-/*Container Styles*/
-
-h2 {
-  text-align: center;
-  color: orangered;
-}
-
-p {
-  color: black;
-}
-
-.card {                                    /* Styles for all 3 containers in the middle*/
-  padding: 20px 20px 20px;
-  max-width: 650px;
-  text-align: justify;
-  background: rgb(236, 234, 234);
-  border-top: 4px solid #4f2903;
-  border-bottom: 4px solid #4f2903;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.fundraiser{
-  margin-left: 20px;
-}
-
-.aboutCard {                                /*About Me Container*/
-  margin: 20px;
-  padding: 20px 20px 20px;
-  text-align: justify;
-  background: rgb(236, 234, 234);
-  border-top: 4px solid #4f2903;
-  border-bottom: 4px solid #4f2903;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.aboutH {                                   /* About Me header*/
-  text-align: center;
-  color: rgb(19, 201, 19);
-}
-
-.profile-image {                           /* Image inside About Me container*/
-  position: relative;      /* where the next element will be automatically positioned */
-  display: inline-block;   /* causes element width to shrink to fit content */
-  left: 50%;               /* moves left side of image to center of parent element */
-  transform: translate(-50%);  /* centers image on "left: 50%" position */
-  margin-top: 10px;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  border: 3px solid rgb(82, 21, 21);
-  transition: all .5s;
 }
 
 /* Footer Styles*/
@@ -215,7 +158,7 @@ a.social:hover {
   overflow: auto;
 }
 
-/* Styles for screens less than 720 pixels wide*/  
+/* Styles for screens smaller than 720px */  
 
 @media screen and (max-width: 720px) {  
   
@@ -228,48 +171,14 @@ a.social:hover {
     transition: all .5s;
   }
 
-  .card {
-    margin: 20px;
-  }
-
   h2 {
     font-size: 140%;
   }
-  .profile-image {
-    width: 140px;
-    height: 140px;
-  }
 }
 
- /*Styles for screens larger than 720px*/
+ /*Styles for screens larger than 720px */
 
 @media screen and (min-width: 720px) {
-  
-  .flex {     
-    display: -webkit-flex;        
-    display: -ms-flexbox;     
-    display: flex;
-    overflow: hidden;
-    max-width: 80%;
-    margin: 0 auto;
-  }
-  .flex .card {
-    flex: 1;
-    padding: 20px;
-  }
-
-  .flex-container {
-    display: flex;
-    max-width: 80%;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0 auto;
-  }
-
-  .aboutPar {
-    margin-left: 30px;
-    line-height: 1.6em;
-  }
 
   header {
     min-height: 450px;
@@ -286,7 +195,7 @@ a.social:hover {
   footer {
     font-size: 1.3em;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 10px auto;
   }
 }
 
